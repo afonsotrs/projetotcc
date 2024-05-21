@@ -133,7 +133,7 @@ function fetchBookDetails(bookISBN) {
         return;
     }
 
-    fetch(apiUrl + "isbn:" + encodeURIComponent(bookISBN))
+    fetch(apiUrl + encodeURIComponent(bookISBN))
         .then(response => response.json())
         .then(data => {
             // Verifica se há itens retornados
