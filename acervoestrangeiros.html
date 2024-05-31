@@ -64,20 +64,22 @@
                         </a>
                     </div>
                 </nav>
-                <div id="menu">
-                    <a href="index.html"><h3>Home</h3></a>
-                    <h3>Sobre</h3>
-                    <a href="login.html"><h3>Login</h3></a>
-                </div>
             </div>
             <div id="container1_2">
-                <h1 id="tituloacervoestrangeiro">
+                <div id="menu">
+                    <h3>.</h3>
+                </div> 
+                <h1 id="titulo">
                     Acervo de autores estrangeiros
                 </h1>
-                <h4 id="descricaofieldset1">Utilize este acervo para buscar livros de autores estrangeiros</h4>
-                <fieldset id="primeirofieldset">
-                    <label class="requisitosdebusca" for="searchAuthor"><strong>Autor:</strong></label>
-                    <select class="requisitosdebusca" id="searchAuthor">
+            </div>
+        </div>
+        <div id="container2">
+            <div id="container2_1">
+                <h4 id="descricao">Utilize este acervo para buscar livros de autores estrangeiros</h4>
+                <fieldset>
+                    <label for="searchAuthor" class="requisitosdebusca">Autor:</label>
+                    <select id="searchAuthor" class="requisitosdebusca">
                         <option value="">Selecione um autor</option>
                         <option value="C.S. Lewis">C.S. Lewis</option>
                         <option value="J.R.R. Tolkien">J.R.R. Tolkien</option>
@@ -144,11 +146,13 @@
                         <option value="Giorgio Bassani">Giorgio Bassani</option>
                         <option value="Richard Brautigan">Richard Brautigan</option>
                         <option value="John Green">John Green</option>
+                        <!-- Adicione mais autores aqui -->
                     </select>
-                    <h5 id="ou_primeiroacervo"><strong>ou</strong></h5>
-                    <input class="requisitosdebusca" type="text" id="customAuthor" placeholder="Digite o nome do autor">
-                    <label class="requisitosdebusca" for="searchGenre"><strong>Gênero:</strong></label>
-                    <select class="requisitosdebusca" id="searchGenre">
+                    <input type="text" class="requisitosdebusca" id="customAuthor" placeholder="Digite o nome do autor">
+                    
+                
+                    <label for="searchGenre" class="requisitosdebusca">Gênero:</label>
+                    <select id="searchGenre" class="requisitosdebusca">
                         <option value="">Selecione um Gênero</option>
                         <option value="Ficção">Ficção</option>
                         <option value="Suspense">Suspense</option>
@@ -157,16 +161,18 @@
                         <option value="Mistério">Mistério</option>
                         <option value="Terror">Terror</option>
                         <option value="Fantasia">Fantasia</option>
+                        <!-- Adicione mais gêneros aqui -->
                     </select>
-                    <input class="requisitosdebusca" type="number" id="recommendationQuantity" min="1" max="5" placeholder="Número máximo de recomendações">
+                
+                    <input type="number" class="requisitosdebusca" id="recommendationQuantity" min="1" max="5" placeholder="Número máximo de recomendações">
                     <button class="requisitosdebusca" onclick="recommendBooks()">Buscar Livro(s)</button>
-                </fieldset> 
+                </fieldset>
             </div>
-        </div>
-        <div id="container2">
-            <div id="resultado1">
+            <div id="container2_2">
+                <div id="resultbox"></div>
                 <div id="results"></div>          
                 <script src="scriptacervoestrangeiro.js"></script>
+            </div>
             </div>
         </div>
     </div>
