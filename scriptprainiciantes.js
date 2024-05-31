@@ -1,6 +1,5 @@
 const restrictedWords = ["box", "coleção"];
 let displayedBooks = [];
-
 const apiKey = "AIzaSyCxOrxXLoowMEjJr6OFR5ieA7qFe-1D8xg"; // Substitua "SUA_CHAVE_API" pela sua chave de API
 const apiUrl = "https://www.googleapis.com/books/v1/volumes?key=" + apiKey + "&langRestrict=pt&q=";
 
@@ -103,7 +102,7 @@ document.getElementById("searchForm").addEventListener("submit", function(event)
 });
 
 function displayBookOptions(books) {
-    var resultsDiv = document.getElementById("results3");
+    var resultsDiv = document.getElementById("results");
     resultsDiv.innerHTML = "";
 
     var bookSelect = document.createElement("select");
@@ -155,7 +154,7 @@ function fetchBookDetails(bookISBN) {
                     <p>Número de páginas: ${pageCount}</p>
                     <button class="moreBooksButton">Mais desse autor</button>
                 `;
-                document.getElementById("results3").appendChild(detailsDiv);
+                document.getElementById("results").appendChild(detailsDiv);
 
                 // Adiciona o evento de clique para o botão "Mais desse autor"
                 detailsDiv.querySelector(".moreBooksButton").addEventListener("click", function() {
@@ -204,7 +203,7 @@ function searchMoreBooksByAuthor(authorName) {
                     displayedBooks.push(book.title);
                 });
 
-                document.getElementById("results3").appendChild(moreBooksDiv);
+                document.getElementById("results").appendChild(moreBooksDiv);
             } else {
                 console.log("Nenhum livro encontrado para este autor.");
             }
