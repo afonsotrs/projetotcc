@@ -28,12 +28,17 @@ CSS 2 CONTAINERS
     flex-direction: column;
 }
 
-#container1_1{  /* menu e sidebar */
+#container1{  /* menu e sidebar */
     display: flex;
     flex-direction: row;
 }
 
-#container1_2{ /* acervo dos estrangeiros */
+#container1_1 { /* sidebar */
+    display: flex;
+    flex-direction: column;
+}
+
+#container1_2{ /* barra menu */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -41,32 +46,17 @@ CSS 2 CONTAINERS
     margin-right: 100px;
 }
 
-#container2{ /* resultado do acervo dos estrangeiros */
+#container2{ /* acervo e resultado */
     display: flex;
     flex-direction: column;
 }
 
-#container3 { /* acervo dos brasileiros */
-    display: flex;
-    flex-direction: column;
-    
-}
-
-#container4 { /* resultado do acervo dos brasileiros */
-    background-color: rgb(254, 226, 236);
-}
-
-#container5 { /* acervo pra iniciantes */
+#container2_1{  /*acervo*/
     display: flex;
     flex-direction: column;
 }
 
-#container6 { /* resultado acervo pra iniciantes */
-    display: flex;
-    flex-direction: column;
-}
-
-#container7 {
+#container2_2 { /*resultado*/
     display: flex;
     flex-direction: column;
 }
@@ -75,7 +65,7 @@ CSS 2 CONTAINERS
 CSS 3 FIELDSET
 */
 
-#primeirofieldset {
+fieldset {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -96,65 +86,7 @@ CSS 3 FIELDSET
     order: 2;
 }
 
-#descricaofieldset1 {  
-    display: flex;
-    position: absolute;
-    white-space: nowrap;
-    left: 30%;
-    top: 24%;
-}
-
-#segundofieldset {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    position: absolute;
-    background-color: rgb(254, 226, 236);
-    color: palevioletred;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgb(254, 226, 236);
-    color: palevioletred;
-    padding: 20px;
-    padding-bottom: 50px;
-    border: 1px solid;
-    width: 30%;
-    height: 65%;
-    max-width: 400px; 
-    order: 2;
-}
-
-#descricaofieldset2 {
-    display: flex;
-    position: absolute;
-    white-space: nowrap;
-    left: 30%;
-    top: 24%;
-}
-
-#terceirofieldset {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    position: absolute;
-    background-color: rgb(254, 226, 236);
-    color: palevioletred;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgb(254, 226, 236);
-    color: palevioletred;
-    padding: 20px;
-    padding-bottom: 50px;
-    border: 1px solid;
-    width: 30%;
-    height: 20%;
-    max-width: 400px; 
-    order: 2;
-}
-
-#descricaofieldset3 {
+#descricao {  
     display: flex;
     position: absolute;
     white-space: nowrap;
@@ -173,40 +105,15 @@ CSS 4 RESULTADOS DOS ACERVOS
     padding: 20px;
 }
 
-#results2 {
-    align-items: center;
-    justify-content: center;
-    margin-left: 50px;
-    padding: 20px;
-}
-
-#results3 {
-    align-items: center;
-    justify-content: center;
-    margin-left: 50px;
-    padding: 20px;
-}
-
-#resultado1 {
-    background-color: rgb(254, 226, 236);
-    border: 1px solid palevioletred;
-}
-
-#resultado2 {
-    background-color: rgb(254, 226, 236);
-    border: 1px solid palevioletred;
-}
-
-#resultado3 {
-    background-color: rgb(254, 226, 236);
-    border: 1px solid palevioletred;
+#resultbox {
+    display: flex;
 }
 
 /* 
 CSS 5 TITULOS
 */
 
-#tituloacervoestrangeiro {
+#titulo {
     display: flex;
     position: absolute;
     place-items: center;
@@ -215,79 +122,28 @@ CSS 5 TITULOS
     justify-content: start;
     left: 30%; 
     top: 11%; 
-}
-
-#tituloacervobr {
-    display: flex;
-    position: absolute;
-    place-items: center;
-    height: 10vh;
-    z-index: 2;
-    justify-content: start;
-    left: 30%; 
-    top: 11%; 
-}
-
-#titulorecomendacoes {
-    display: flex;
-    position: absolute;
-    place-items: center;
-    height: 10vh;
-    z-index: 2;
-    justify-content: start;
-    left: 30%; 
-    top: 11%; 
-}
-
-#titulonoticias {
-    margin-left: auto;
-    margin-right: auto;
 }
 
 /*
-CSS 6 NOTICIAS 
+CSS 6 MENU 
 */
 
-#noticias {
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(254, 226, 236);
-    border: 1px solid;
-    min-width: 100vh;
-}
-
-#noticias {
-    margin-top: 40px;
-}
-
-#noticia1 {
+#menu {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    background-color: rgb(216, 112, 147);
+    color: rgb(254, 226, 236);
+    min-width: 100%;
+    max-height: 10vh;
 }
 
-#noticia2 {
+h3 {
     display: flex;
     flex-direction: row;
-}
-
-#noticia3 {
-    display: flex;
-    flex-direction: row;
-}
-
-#noticiaimg {
-    width: 400px;
-    height: 300px;
-}
-
-#manchete {
-    cursor: pointer;
-    height: 10px;
-    margin-top: 120px;
-}
-
-#manchete:hover {
-    color: pink;
+    margin: right;
+    color: rgb(216, 112, 147);
 }
 
 /*
@@ -329,7 +185,7 @@ CSS 7 SIDEBAR
 }
 
 #sidebar.open-sidebar {
-    min-width: 20%;
+    min-width: 100%;
 }
 
 #sidebar.open-sidebar .item_description {
@@ -401,36 +257,20 @@ span{
 }
 
 /*
-CSS 8 MENU 
-*/
-
-#menu {
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    background-color: rgb(216, 112, 147);
-    color: rgb(254, 226, 236);
-    min-width: 200%;
-    max-height: 10vh;
-}
-
-h3 {
-    display: flex;
-    flex-direction: row;
-    padding-left: 50px;
-    cursor: pointer;
-    margin-left: 150px;
-}
-
-h3:hover {
-    color: pink;
-}
-
-/*
-CSS 9 REQUISITOS DE BUSCA 
+CSS 8 REQUISITOS DE BUSCA 
 */
 
 .requisitosdebusca {
+    gap: 8px;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#requisitosdebusca {
     gap: 8px;
     padding: 10px;
     align-items: center;
@@ -455,7 +295,7 @@ CSS 9 REQUISITOS DE BUSCA
 }
 
 /*
-CSS 10 LOGOUT 
+CSS 9 LOGOUT 
 */
 
 .side-item a i, #logout_btn i {
