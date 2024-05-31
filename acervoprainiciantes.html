@@ -64,19 +64,26 @@
                         </a>
                     </div>
                 </nav>
+            </div>
+            <div id="container1_2">
                 <div id="menu">
                     <a href="index.html"><h3>Home</h3></a>
                     <h3>Sobre</h3>
                     <a href="login.html"><h3>Login</h3></a>
-                </div>
+                </div> 
             </div>
-        <div id="container5">
-            <h1 id="titulorecomendacoes">Recomendações pra iniciantes</h1>
-            <h4 id="descricaofieldset3">Utilize este acervo para buscar livros baseados no seu gênero</h4>
-            <fieldset id="terceirofieldset">
-                <form id="searchForm">
-                    <label for="genreSelect">Selecione o Gênero:</label>
-                    <select id="genreSelect">
+        </div>
+        <div id="container2">
+            <div id="container2_1">
+                <h1 id="titulo">
+                    Acervo de leitores iniciantes
+                </h1>
+                <h4 id="descricao">Utilize este acervo para buscar livros baseados no gênero</h4>
+                <fieldset>
+                    <h1>Acervo de Livros</h1>
+                    <form id="searchForm">
+                        <label for="genreSelect">Selecione o Gênero:</label>
+                        <select id="genreSelect">
                             <option value="" disabled selected>Selecione um gênero</option>
                             <option value="fantasy">Fantasia</option>
                             <option value="mystery">Mistério</option>
@@ -85,15 +92,16 @@
                             <option value="children">Infantil</option>
                             <option value="action">Ação</option>
                             <option value="drama">Drama</option>
-                    </select>
-                    <button id="botao3" type="submit">Consultar Livros</button>
-                </form>
-            </fieldset>    
-        </div>
-        <div id="container6">
-            <div id="resultado3">
-                <div id="results3"></div>
+                        </select>
+                        <button type="submit">Consultar Livros</button>
+                    </form>
+                </fieldset>
+            </div>
+            <div id="container2_2">
+                <div id="resultbox"></div>
+                <div id="results"></div>          
                 <script src="scriptprainiciantes.js"></script>
+            </div>
             </div>
         </div>
     </div>
