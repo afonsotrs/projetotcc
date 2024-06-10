@@ -66,11 +66,6 @@
                 </nav>
             </div>
             <div id="container1_2">
-                <div id="menu">
-                    <a href="index.html"><h3>Home</h3></a>
-                    <h3>Sobre</h3>
-                    <a href="login.html"><h3>Login</h3></a>
-                </div> 
             </div>
         </div>
         <div id="container2">
@@ -102,7 +97,31 @@
                 <div id="results"></div>          
                 <script src="scriptprainiciantes.js"></script>
             </div>
+        </div>
+        <div id="avaliacao">
+            <h1>Avalie esse site</h1>
+            <div class="rating">
+                <span class="star" onmouseover="mouseOver(1)" onmouseleave="mouseLeave(1)" onclick="rate(1)">&#9734;</span>
+                <span class="star" onmouseover="mouseOver(2)" onmouseleave="mouseLeave(2)" onclick="rate(2)">&#9734;</span>
+                <span class="star" onmouseover="mouseOver(3)" onmouseleave="mouseLeave(3)" onclick="rate(3)">&#9734;</span>
+                <span class="star" onmouseover="mouseOver(4)" onmouseleave="mouseLeave(4)" onclick="rate(4)">&#9734;</span>
+                <span class="star" onmouseover="mouseOver(5)" onmouseleave="mouseLeave(5)" onclick="rate(5)">&#9734;</span>
             </div>
+            
+            <!-- Movendo o gif para ficar ao lado das estrelas -->
+            <div class="anime-character" id="animeCharacter"></div>
+        
+            <!-- Adicionando a caixa de entrada -->
+            <textarea id="opinion" placeholder="Digite sua opinião" oninput="updateCharCount()"></textarea>
+            <div id="charCount">0/500</div>
+            <div id="charLimitMessage">Você excedeu o limite de 500 caracteres!</div>
+        
+            <button onclick="submitOpinion()">Enviar Opinião</button>
+            <script src="animação.js"></script>
+        </div>
+        <div id="container4">
+            <h1 id="sobretitulo">sobre</h1>
+            <p>Este site é um projeto desenvolvido por alunos do IFRN que servirá de material para a produção de um TCC. Nele, o usuário poderá receber recomendações de livros baseado em suas preferências que serão capturadas por um formulário. O site possui 3 formulários para 3 acervos difentes de livros, além disso, possui um sistema de login no qual recebe o email e senha do usuário para realizar o cadastro</p>
         </div>
     </div>
     <script src="scriptsidebar.js"></script>
