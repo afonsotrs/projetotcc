@@ -74,6 +74,14 @@ CSS 2 CONTAINERS
     margin-left: 60px;
 }
 
+#avaliacao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 60px;
+}
+
 #container4 {
     display: flex;
     flex-direction: column;
@@ -144,6 +152,10 @@ CSS 5 TITULOS
     left: 30%; 
     top: 11%; 
     color: palevioletred;
+}
+
+#sobretitulo {
+    margin-top: 50px;
 }
 
 /*
