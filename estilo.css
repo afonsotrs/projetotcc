@@ -41,9 +41,14 @@ CSS 2 CONTAINERS
 #container1_2{ /* barra menu */
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: start;
-    margin-right: 100px;
+    margin-right: 1050px;
+    align-items: center;
+    justify-content: start;
+    background-color: rgb(216, 112, 147);
+    color: rgb(254, 226, 236);
+    min-width: 100%;
+    max-height: 10vh;
 }
 
 #container2{ /* acervo e resultado */
@@ -59,6 +64,22 @@ CSS 2 CONTAINERS
 #container2_2 { /*resultado*/
     display: flex;
     flex-direction: column;
+}
+
+#container3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 60px;
+}
+
+#container4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
 }
 
 /* 
@@ -122,32 +143,11 @@ CSS 5 TITULOS
     justify-content: start;
     left: 30%; 
     top: 11%; 
+    color: palevioletred;
 }
 
 /*
-CSS 6 MENU 
-*/
-
-#menu {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: start;
-    background-color: rgb(216, 112, 147);
-    color: rgb(254, 226, 236);
-    min-width: 100%;
-    max-height: 10vh;
-}
-
-h3 {
-    display: flex;
-    flex-direction: row;
-    margin: right;
-    color: rgb(216, 112, 147);
-}
-
-/*
-CSS 7 SIDEBAR 
+CSS 6 SIDEBAR 
 */
 
 #sidebar {
@@ -257,7 +257,7 @@ span{
 }
 
 /*
-CSS 8 REQUISITOS DE BUSCA 
+CSS 7 REQUISITOS DE BUSCA 
 */
 
 .requisitosdebusca {
@@ -293,6 +293,72 @@ CSS 8 REQUISITOS DE BUSCA
     margin-left: auto;
     margin-right: auto;
 }
+
+/*
+CSS 8 AVALIAÇÃO
+*/
+
+h1 {
+    text-align: center; /* Alinha o texto ao centro */
+    font-size: 36px; /* Tamanho da fonte */
+    color: palevioletred; /* Cor do texto */
+    margin-bottom: 20px; /* Adiciona espaço abaixo do título */
+}
+
+.rating {
+    unicode-bidi: bidi-override;
+    position: relative;
+    font-size: 64px; /* Aumenta o tamanho das estrelas */
+    color: #968892; /* Cor do fundo das estrelas */
+    cursor: pointer;
+}
+.rating > .star {
+    display: inline-block;
+    position: relative;
+    width: 1.5em; /* Ajusta a largura das estrelas */
+    transition: color 0.3s; /* Adiciona transição de cor */
+}
+.rating > .star.filled {
+    color: palevioletred; /* Cor das estrelas preenchidas */
+}
+
+/* Definição da animação */
+@keyframes bounce {
+    0% { transform: scaleX(0); } /* Começa sem largura */
+    40% { transform: scaleX(1.5); } /* Cresce rapidamente para a direita */
+    80% { transform: scaleX(1); } /* Retorna ao tamanho normal */
+    100% { transform: scaleX(1); } /* Mantém o tamanho normal */
+}
+
+.anime-character {
+    width: 150px; /* Aumenta o tamanho do GIF */
+    height: 150px; /* Aumenta o tamanho do GIF */
+    margin-top: 20px; /* Posiciona o GIF mais abaixo das estrelas */
+    margin-left: calc(50% - 75px); /* Centraliza o GIF horizontalmente */
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.3s;
+}
+.happy { background-image: url('https://media4.giphy.com/media/wdvtewKr34ylO/200.webp?cid=ecf05e4775f2g04w4aoelpss4th1n8exdgtwlovgd9nf7ahu&ep=v1_gifs_search&rid=200.webp&ct=g'); }
+.neutral { background-image: url('https://media1.tenor.com/m/jYJX-LVnUVEAAAAC/kakashi.gif'); }
+.sad { background-image: url('https://media1.tenor.com/m/acoHkVJ0xCQAAAAC/thanks-a-lot-naruto-shippuden.gif'); }
+
+/* Estilo para a caixa de entrada */
+textarea {
+    width: calc(100% - 20px); /* Ocupa toda a largura disponível com margem de 10px */
+    padding: 10px; /* Espaçamento interno */
+    box-sizing: border-box; /* Inclui o padding na largura total */
+    font-size: 16px;
+    margin-top: 20px; /* Adiciona espaço acima da caixa de entrada */
+    resize: none; /* Impede que o usuário redimensione a caixa de texto manualmente */
+    overflow-y: hidden; /* Oculta a barra de rolagem vertical */
+    border: 2px solid #ccc; /* Adiciona uma borda */
+    border-radius: 5px; /* Adiciona cantos arredondados */
+}
+
+/*
+CSS 9 SOBRE
+*/
 
 /*
 CSS 9 LOGOUT 
