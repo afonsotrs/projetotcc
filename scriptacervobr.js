@@ -1,4 +1,3 @@
-// Armazenar todos os livros retornados pela última busca
 let allBooks = [];
 
 function recommendBooks() {
