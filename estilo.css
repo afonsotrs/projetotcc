@@ -66,28 +66,21 @@ CSS 2 CONTAINERS
     flex-direction: column;
 }
 
+#containeravaliacao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 #container3 {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-left: 60px;
-}
-
-#avaliacao {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-left: 60px;
-}
-
-#container4 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 60px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* 
@@ -119,7 +112,7 @@ fieldset {
     display: flex;
     position: absolute;
     white-space: nowrap;
-    left: 30%;
+    left: 37%;
     top: 24%;
 }
 
@@ -149,7 +142,7 @@ CSS 5 TITULOS
     height: 10vh;
     z-index: 2;
     justify-content: start;
-    left: 30%; 
+    left: 35%; 
     top: 11%; 
     color: palevioletred;
 }
@@ -367,10 +360,6 @@ textarea {
     border: 2px solid #ccc; /* Adiciona uma borda */
     border-radius: 5px; /* Adiciona cantos arredondados */
 }
-
-/*
-CSS 9 SOBRE
-*/
 
 /*
 CSS 9 LOGOUT 
