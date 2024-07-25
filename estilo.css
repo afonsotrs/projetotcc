@@ -19,6 +19,10 @@ a {
     color: inherit;
 }
 
+p {
+    margin-left: 35px;
+}
+
 /* 
 CSS 2 CONTAINERS
 */
@@ -41,10 +45,9 @@ CSS 2 CONTAINERS
 #container1_2{ /* barra menu */
     display: flex;
     flex-direction: column;
-    align-items: start;
     margin-right: 1050px;
-    align-items: center;
-    justify-content: start;
+    align-items: start;
+    justify-content: center;
     background-color: rgb(216, 112, 147);
     color: rgb(254, 226, 236);
     min-width: 100%;
@@ -110,7 +113,6 @@ fieldset {
 
 #descricao {  
     display: flex;
-    position: absolute;
     white-space: nowrap;
     left: 37%;
     top: 24%;
@@ -137,7 +139,6 @@ CSS 5 TITULOS
 
 #titulo {
     display: flex;
-    position: absolute;
     place-items: center;
     height: 10vh;
     z-index: 2;
@@ -170,7 +171,7 @@ CSS 6 SIDEBAR
 
 #open_btn {
     position: absolute;
-    top: 30px;
+    top: 10px;
     right: -20px;
     cursor: pointer;
     z-index: 3;
@@ -362,7 +363,11 @@ textarea {
 }
 
 /*
-CSS 9 LOGOUT 
+CSS 9 SOBRE
+*/
+
+/*
+CSS 10 LOGOUT 
 */
 
 .side-item a i, #logout_btn i {
